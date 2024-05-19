@@ -21,7 +21,7 @@ API para gerenciar as compras, usuários e pagamentos utilizando os princípios 
 - Consultas com Spring Data JPA
 - Injeção de Dependências
 - Tratamento de respostas de erro
-- Práticas de banco de dados usando PostgreSQL, SQL,
+- Práticas de banco de dados usando PostgreSQL, SQL
 - Ferramenta de requisição Postman
 - Deploy com Heroku
 
