@@ -67,7 +67,3 @@ http://localhost:8080/users/id
 ```
 http://localhost:8080/users/id
 ```
-
-- Consulta se o email está cadastrado e o cupom de desconto ainda está ativo
-```
-localhost:8080/email/id
