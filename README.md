@@ -1,5 +1,5 @@
 <h1 align="center">
-  API para gerenciamento de compras
+  API para gerenciamento de clientes e compras
 </h1>
 
 API para gerenciar as compras, usuários e pagamentos utilizando os princípios do (CRUD).
