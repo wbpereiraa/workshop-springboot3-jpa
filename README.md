@@ -30,9 +30,17 @@ API para gerenciar as compras, usuários e pagamentos utilizando os princípios 
 
 Para fazer as requisições HTTP abaixo, foi utilizada a ferramenta Postman (https://www.postman.com/product/api-client/):
 
-- Consultar os clientes cadastrado e suas compras (GET)
+- Consultar os clientes pelo Id e lista total de cadastrados e suas compras (GET)
 ```
-$ http://localhost:8080/users/id
+http://localhost:8080/users/id
+
+
+http://localhost:8080/users
+```
+
+- Cadastrar os clientes (POST)
+```
+http://localhost:8080/users
 [
   {
     "name": "Zé Pereira",
@@ -42,30 +50,24 @@ $ http://localhost:8080/users/id
 }
 ]
 ```
-- Consultar os clientes cadastrado e suas compras (POST)
+
+- Atualizar os clientes cadastrados pelo id (PUT)
+```
+http://localhost:8080/users/id
 [
   {
-    "name": "Zé Pereira",
-    "email": "ze.pereiraa@gmail.com",
-    "phone": "1188569974",
-    "password": "123456"
+    "name": "Zé Silveiro",
+    "email": "ze.silveiro@gmail.com",
+    "phone": "1199978564",
 }
 ]
-  
-- Consultar os clientes cadastrado e suas compras (PUT)
-- Consultar os clientes cadastrado e suas compras (DEL)
+```
+
+- Deletar os clientes cadastrados pelo id (DEL)
+```
+http://localhost:8080/users/id
+```
 
 - Consulta se o email está cadastrado e o cupom de desconto ainda está ativo
 ```
-$ localhost:8080/email/id
-
-[
-  {
-    EMAIL ATIVO - O cupom é válido ate dia XX-XX-XX.Faltam X dias para vencimento do cupom.
-
-                                OU
-
-    EMAIL INATIVO - O cupom não está dentro da validade de 15 dias.
-  }
-]
-```
+localhost:8080/email/id
